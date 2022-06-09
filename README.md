@@ -24,6 +24,9 @@ dijumpai di kebun binatang pada umumnya.
 ![Img 2](screenshots/img2.png)
 
 ##Change Log
+
+
+
 Progression we made throughout the time.
 
 ###06/06/22 - Intial Commit
