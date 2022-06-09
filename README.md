@@ -14,6 +14,7 @@ dijumpai di kebun binatang pada umumnya.
 - Setiap interaksi akan mengeluarkan suara hewan yang dikunjungi.
 
 ##Change Logs
+
 06/06/22 - Intial Commit
 - Basic game functions (Graphics, Player movement, Sound trigger, Soundtrack).
 
