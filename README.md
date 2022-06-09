@@ -23,16 +23,10 @@ dijumpai di kebun binatang pada umumnya.
 ## Screenshot(s)
 ![Img 2](screenshots/img2.png)
 
-##Change Log
-
-
-
-Progression we made throughout the time.
-
-###06/06/22 - Intial Commit
+###Change Log 06/06/22 - Intial Commit
 - Basic game functions (Graphics, Player movement, Sound trigger, Soundtrack).
 
-###09/06/22 - UI Update
+###Change Log 09/06/22 - UI Update
 - Added information UI with animal title and their descprition,
 - Added a new feature: display information UI whenever player is on a certain place
 - Added interact button UI
