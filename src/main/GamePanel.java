@@ -30,10 +30,17 @@ public class GamePanel extends JPanel implements Runnable{
     public int borderLeft = 1;
     public int borderRight = 718;
 
+    // is player is on the right spot?
+    public boolean playerOnPosition = false;
+
+    // display UI rules
+    public boolean displayUI = false;
+
     // system
     TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
     Sound sound = new Sound();
+    UI ui = new UI(this);
     Thread gameThread;
 
     // entity and object
@@ -71,13 +78,27 @@ public class GamePanel extends JPanel implements Runnable{
             update();
             // 2. Draw the screen with the updated information
             repaint();
+            // check player coordinate
+//            System.out.println("player x: "+player.x+" ,player y: "+player.y);
 
             // set of game rules
+            displayUI = false;
             if (player.x > 400 && player.x < 700 && player.y > 300 && player.y < 500){
 //                System.out.println("player is around 400-700");
+                ui.displayUI(0);
+                playerOnPosition = true;
                 if (keyH.interactPressed){
                     playSE(3);
                     keyH.interactPressed = false;
+                }
+            }else{
+                playerOnPosition = false;
+            }
+
+            if (player.x > 1 && player.x < 25 && player.y > 370 && player.y < 460){
+                System.out.println("ur on exit");
+                if (keyH.interactPressed){
+                    System.exit(0);
                 }
             }
 
@@ -99,6 +120,9 @@ public class GamePanel extends JPanel implements Runnable{
 
         tileM.draw(g2);
         player.draw(g2);
+        if (displayUI){
+            ui.draw(g2);
+        }
         g2.dispose();
     }
     public void playMusic(int i){

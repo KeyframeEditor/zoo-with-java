@@ -8,7 +8,7 @@ import res.sound.*;
 
 public class Sound {
     Clip clip;
-    URL soundURL[] = new URL[30];
+    URL soundURL[] = new URL[4];
 
     public Sound(){
         soundURL[0] = getClass().getResource(SoundAssets.excuse);

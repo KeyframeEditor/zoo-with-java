@@ -1,14 +1,18 @@
 package main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.io.File;
+import res.icon.*;
+import res.icon.Icon;
+import res.player.playerSprites;
 
 public class Main {
     public static void main(String[] args) {
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("The Final");
+        window.setTitle("Educational Zoo Tour");
 
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
