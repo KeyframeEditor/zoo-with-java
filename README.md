@@ -15,12 +15,12 @@ dijumpai di kebun binatang pada umumnya.
 
 ##Change Logs
 
-06/06/22 - Intial Commit
+####06/06/22 - Intial Commit
 - Basic game functions (Graphics, Player movement, Sound trigger, Soundtrack).
 
-06/06/22 - Added readme.
+####06/06/22 - Added readme.
 
-09/06/22 - UI Update
+####09/06/22 - UI Update
 - Added information UI with animal title and their descprition, 
 - Added a new feature: display information UI whenever player is on a certain place
 - Added interact button UI
@@ -28,7 +28,7 @@ dijumpai di kebun binatang pada umumnya.
 - Updated map
 - Updated window title
 
-06/06/22 - Updated readme and screenshots.
+####06/06/22 - Updated readme and screenshots.
 
 ## Credits
 - Lead Programmer: nope.
