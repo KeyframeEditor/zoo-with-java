@@ -8,13 +8,14 @@ import res.sound.*;
 
 public class Sound {
     Clip clip;
-    URL soundURL[] = new URL[4];
+    URL soundURL[] = new URL[5];
 
     public Sound(){
         soundURL[0] = getClass().getResource(SoundAssets.excuse);
         soundURL[1] = getClass().getResource(SoundAssets.step1);
         soundURL[2] = getClass().getResource(SoundAssets.step2);
         soundURL[3] = getClass().getResource(SoundAssets.itemdrop);
+        soundURL[4] = getClass().getResource(SoundAssets.beast);
     }
 
     public void setFile(int i){
