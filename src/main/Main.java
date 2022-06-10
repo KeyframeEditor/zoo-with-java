@@ -13,6 +13,8 @@ public class Main {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
         window.setTitle("Educational Zoo Tour");
+        ImageIcon img = new ImageIcon("src/res/icon/icon.png");
+        window.setIconImage(img.getImage());
 
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);

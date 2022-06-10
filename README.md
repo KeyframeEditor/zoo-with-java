@@ -33,3 +33,8 @@ dijumpai di kebun binatang pada umumnya.
 - New Character Design
 - Updated map
 - Updated window title
+
+### Change Log 10/06/22 - More Changes
+- Added new app icon
+- Added "Beast"
+- Updated map
