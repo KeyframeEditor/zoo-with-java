@@ -79,28 +79,29 @@ public class GamePanel extends JPanel implements Runnable{
             // 2. Draw the screen with the updated information
             repaint();
             // check player coordinate
-//            System.out.println("player x: "+player.x+" ,player y: "+player.y);
+            //System.out.println("player x: "+player.x+" ,player y: "+player.y);
 
             // set of game rules
             displayUI = false;
             tileM.bgIndex = 0;
             if (player.x > 400 && player.x < 700 && player.y > 300 && player.y < 500){
-                while(true){
-                    tileM.bgIndex = 1;
-                    playSE(4);
-                    try {
-                        Thread.sleep(5000);
-                        break;
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
+                // beast rule
+//                while(true){
+//                    tileM.bgIndex = 1;
+//                    playSE(10);
+//                    try {
+//                        Thread.sleep(5000);
+//                        break;
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
 //                System.out.println("player is around 400-700");
-                ui.displayUI(0);
+                ui.displayUI(1);
                 playerOnPosition = true;
 
                 if (keyH.interactPressed){
-                    playSE(3);
+                    playAnimal("Antelope Saiga");
                     keyH.interactPressed = false;
                 }
             }else{
@@ -138,7 +139,7 @@ public class GamePanel extends JPanel implements Runnable{
         g2.dispose();
     }
     public void playMusic(int i){
-        sound.setFile(i);
+        sound.setFile(String.valueOf(i));
         sound.play();
         sound.loop();
     }
@@ -146,7 +147,11 @@ public class GamePanel extends JPanel implements Runnable{
         sound.stop();
     }
     public void playSE(int i){
-        sound.setFile(i);
+        sound.setFile(String.valueOf(i));
+        sound.play();
+    }
+    public void playAnimal(String name){
+        sound.setFile(String.valueOf(name));
         sound.play();
     }
 }

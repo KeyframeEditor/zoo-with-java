@@ -38,3 +38,10 @@ dijumpai di kebun binatang pada umumnya.
 - Added new app icon
 - Added "Beast"
 - Updated map
+
+### Change Log 14/06/22 - Added Animal Sounds
+- Added 6 new animal sounds (okapi, red panda, rhea, saiga, shoebill, wombat)
+- Updated character design
+- Simplification on how sounds are played for code readability
+- Adjusted interact button UI alignment
+- Updated app window icon

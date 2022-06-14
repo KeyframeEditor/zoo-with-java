@@ -7,26 +7,28 @@ public class UI {
     Font arial_40;
     Font arial_20;
     Font arial_20_bold;
+
+
     public String[] animalNames = new String[6];
     public String[] animalDesc = new String[6];
     private Graphics2D g2;
 
     public void animalTitle(){
         animalNames[0] = "Red Panda";
-        animalNames[1] = "null";
-        animalNames[2] = "null";
-        animalNames[3] = "null";
-        animalNames[4] = "null";
-        animalNames[5] = "null";
+        animalNames[1] = "Antelope Saiga";
+        animalNames[2] = "Rheas";
+        animalNames[3] = "Wombat";
+        animalNames[4] = "Shoebill";
+        animalNames[5] = "Okapi Johnstoni";
     }
 
     public void animalDesc(){
-        animalDesc[0] = "a small mammal native to the eastern Himalayas and southwestern\nChina. It has dense reddish-brown fur with a black belly and legs, \nwhite-lined ears,a mostly white muzzle and a ringed tail.";
-        animalDesc[1] = "null";
-        animalDesc[2] = "null";
-        animalDesc[3] = "null";
-        animalDesc[4] = "null";
-        animalDesc[5] = "null";
+        animalDesc[0] = "A small mammal native to the eastern Himalayas and southwestern\nChina. It has dense reddish-brown fur with a black belly and legs, \nwhite-lined ears,a mostly white muzzle and a ringed tail.";
+        animalDesc[1] = "A critically endangered antelope which during antiquity inhabited\na vast area of the Eurasian steppe.";
+        animalDesc[2] = "A large ratites in the order Rheiformes, native to South America,\ndistantly related to the ostrich and emu.";
+        animalDesc[3] = "Short-legged, muscular quadrupedal marsupials that are native to\nAustralia. They are about 1 m (40 in) in length with small, stubby\ntails and weigh between 20 and 35 kg";
+        animalDesc[4] = "A very large stork-like bird. It derives its name from its enormous\nshoe-shaped bill. It has a somewhat stork-like overall form";
+        animalDesc[5] = "An artiodactyl mammal that is endemic to the northeast Democratic\nRepublic of the Congo in central Africa.";
     }
 
     public int animalIndex = 0;
@@ -42,6 +44,8 @@ public class UI {
         arial_20 = new Font("Arial", Font.PLAIN, 20);
         arial_20_bold = new Font("Arial", Font.BOLD, 20);
     }
+    public UI(){
+    }
 
     public void drawInfoScreen(){
         int x = gp.tileSize;
@@ -54,7 +58,7 @@ public class UI {
         //InterractSoundUI locations
         int soundUI_x = gp.tileSize*11;
         int soundUI_y = gp.tileSize*10+38;
-        int soundUI_width = gp.tileSize*4;
+        int soundUI_width = gp.tileSize*4-10;
         int soundUI_height = gp.tileSize-10;
 
         drawSubWindow(x,y,width,height);
@@ -104,7 +108,7 @@ public class UI {
 
         g2.setFont(arial_20_bold);
         g2.setColor(Color.black);
-        g2.drawString("Press F to hear", x+17,y+25);
+        g2.drawString("Press F to hear", x+18,y+25);
     }
 
     public void draw(Graphics2D g2){
