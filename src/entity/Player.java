@@ -81,7 +81,7 @@ public class Player extends entity{
             // set of player position rules
             //UP
             if(keyH.upPressed && y > gp.borderTop){
-                if((x >= 70 && x <= 304) && (y >= 442-1 && y <= 442)){
+                if((x >= 70 && x <= 304) && (y >= 442-gp.tileSize && y <= 442)){
                     //block player move
                 }else if((x >= 304 && x <= 718) && (y >= 40 && y <= 41)){
                     //block player move
@@ -117,7 +117,7 @@ public class Player extends entity{
             else if(keyH.leftPressed && x > gp.borderLeft){
                 if((x >= 70+gp.tileSize && x <= 304) &&(y >= 40 && y <= 442)){
                     //block player move
-                }else if((x >= 418+gp.tileSize && x <= 640) &&(y >= 124 && y <= 526)){
+                }else if((x >= 418+gp.tileSize && x <= 650) &&(y >= 124 && y <= 526)){
                     //block player move
                 }else{
                 direction = "left";

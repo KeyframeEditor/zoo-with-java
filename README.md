@@ -52,6 +52,11 @@ dijumpai di kebun binatang pada umumnya.
 - All animal interaction UI & sounds are enabled
 - Fix in-game exit program location to the bottom right corner of the screen
 
+### 15/06/22 - Bug fix v1.1
+- Squashed a bug where the player can enter a wombat cage
+- Updated game soundtrack
+- Adjusted player collision on some cages
+
 ## Screenshot(s)
 ![Img 2](screenshots/img2.png)
 ![Img 3](screenshots/img3.png)

@@ -25,7 +25,7 @@ public class Sound {
         soundAnimal[5] = getClass().getResource(SoundAssets.okapi);
 
         //sound effects
-        soundURL[0] = getClass().getResource(SoundAssets.excuse);
+        soundURL[0] = getClass().getResource(SoundAssets.soundtrack);
         soundURL[1] = getClass().getResource(SoundAssets.step1);
         soundURL[2] = getClass().getResource(SoundAssets.step2);
         soundURL[3] = getClass().getResource(SoundAssets.itemdrop);
@@ -58,7 +58,6 @@ public class Sound {
                     }
                 }
             }
-
         }catch (Exception e){
         }
     }
