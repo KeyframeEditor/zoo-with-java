@@ -23,9 +23,9 @@ public class Player extends entity{
     }
 
     public void setDefaultValues(){
-        x = 100;
-        y = 100;
-        speed = 6;
+        x = 22;
+        y = 64;
+        speed = 4;
         direction = "down";
     }
 
@@ -78,21 +78,51 @@ public class Player extends entity{
                 stepCounter = 0;
             }
 
+            // set of player position rules
+            //UP
             if(keyH.upPressed && y > gp.borderTop){
+                if((x >= 70 && x <= 304) && (y >= 442-1 && y <= 442)){
+                    //block player move
+                }else if((x >= 304 && x <= 718) && (y >= 40 && y <= 41)){
+                    //block player move
+                }else{
                 direction = "up";
                 y = y - speed;
+                }
             }
+            //DOWN
             else if(keyH.downPressed && y < gp.borderBottom){
+                if((x >= 424 && x <= 640) && (y >= 124 && y <= 124+gp.tileSize)) {
+                    //block player move
+                }else if((x >= 70 && x <= 718) && (y >= 16 && y <= 17)) {
+                    //block player move
+                }
+                else{
                 direction = "down";
                 y = y + speed;
+                }
             }
+            //RIGHT
             else if(keyH.rightPressed && x < gp.borderRight){
-                direction = "right";
-                x = x + speed;
+                if((x >= 70 && x <= 304-gp.tileSize) &&(y >= 40 && y <= 442)){
+                    //block player move
+                }else if((x >= 418 && x <= 640-gp.tileSize) &&(y >= 124 && y <= 526)){
+                    //block player move
+                }else{
+                    direction = "right";
+                    x = x + speed;
+                }
             }
+            //LEFT
             else if(keyH.leftPressed && x > gp.borderLeft){
+                if((x >= 70+gp.tileSize && x <= 304) &&(y >= 40 && y <= 442)){
+                    //block player move
+                }else if((x >= 418+gp.tileSize && x <= 640) &&(y >= 124 && y <= 526)){
+                    //block player move
+                }else{
                 direction = "left";
                 x = x - speed;
+                }
             }
 
             spriteCounter++;

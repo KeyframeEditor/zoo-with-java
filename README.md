@@ -20,8 +20,7 @@ dijumpai di kebun binatang pada umumnya.
 - Soundtrack: C418, Minecraft
 - Sound Effects: Minecraft
 
-## Screenshot(s)
-![Img 2](screenshots/img2.png)
+
 
 ### Change Log 06/06/22 - Intial Commit
 - Basic game functions (Graphics, Player movement, Sound trigger, Soundtrack).
@@ -45,3 +44,14 @@ dijumpai di kebun binatang pada umumnya.
 - Simplification on how sounds are played for code readability
 - Adjusted interact button UI alignment
 - Updated app window icon
+
+### 15/06/22 - FIRST RELEASE!! v1.0
+- Updated map
+- Fix stretched player character
+- Added player collision on animal cage and street fences
+- All animal interaction UI & sounds are enabled
+- Fix in-game exit program location to the bottom right corner of the screen
+
+## Screenshot(s)
+![Img 2](screenshots/img2.png)
+![Img 3](screenshots/img3.png)

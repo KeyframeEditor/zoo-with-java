@@ -24,7 +24,7 @@ public class GamePanel extends JPanel implements Runnable{
     // move amount counter
     static long moveCounter = 0;
 
-    // game border
+    // game border used in player class
     public int borderTop = 7;
     public int borderBottom = 523;
     public int borderLeft = 1;
@@ -45,12 +45,6 @@ public class GamePanel extends JPanel implements Runnable{
 
     // entity and object
     Player player = new Player(this,keyH);
-
-
-    //player default position and rules
-//    int playerX = 100;
-//    int playerY = 100;
-//    int playerSpeed = 10;
 
     public GamePanel(){
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
@@ -79,27 +73,30 @@ public class GamePanel extends JPanel implements Runnable{
             // 2. Draw the screen with the updated information
             repaint();
             // check player coordinate
-            //System.out.println("player x: "+player.x+" ,player y: "+player.y);
+//            System.out.println("player x: "+player.x+" ,player y: "+player.y);
 
             // set of game rules
             displayUI = false;
             tileM.bgIndex = 0;
-            if (player.x > 400 && player.x < 700 && player.y > 300 && player.y < 500){
-                // beast rule
-//                while(true){
-//                    tileM.bgIndex = 1;
-//                    playSE(10);
-//                    try {
-//                        Thread.sleep(5000);
-//                        break;
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//                System.out.println("player is around 400-700");
+            if (player.x >= 700 && player.x <= 718 && player.y >= 4 && player.y <= 16){
+                while(true){
+                    tileM.bgIndex = 1;
+                    playSE(4);
+                    try {
+                        Thread.sleep(5000);
+                        player.x = 22;
+                        player.y = 64;
+                        break;
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+                //antelope saiga UI & Sound
+            if (player.x >= 60 && player.x <= 70 && player.y >= 40 && player.y <= 142){
                 ui.displayUI(1);
                 playerOnPosition = true;
-
                 if (keyH.interactPressed){
                     playAnimal("Antelope Saiga");
                     keyH.interactPressed = false;
@@ -108,13 +105,74 @@ public class GamePanel extends JPanel implements Runnable{
                 playerOnPosition = false;
             }
 
-            if (player.x > 1 && player.x < 25 && player.y > 370 && player.y < 460){
-                System.out.println("ur on exit");
+                //Rheas bird UI & Sound
+            if (player.x >= 60 && player.x <= 70 && player.y >= 184 && player.y <= 256){
+                ui.displayUI(2);
+                playerOnPosition = true;
+                if (keyH.interactPressed){
+                    playAnimal("Rheas");
+                    keyH.interactPressed = false;
+                }
+            }else{
+                playerOnPosition = false;
+            }
+
+                //Wombat UI & Sound
+            if (player.x >= 60 && player.x <= 70 && player.y >= 334 && player.y <= 412){
+                ui.displayUI(3);
+                playerOnPosition = true;
+                if (keyH.interactPressed){
+                    playAnimal("Wombat");
+                    keyH.interactPressed = false;
+                }
+            }else{
+                playerOnPosition = false;
+            }
+
+                //Red Panda UI & Sound
+            if (player.x >= 406 && player.x <= 418 && player.y >= 148 && player.y <= 238){
+                ui.displayUI(0);
+                playerOnPosition = true;
+                if (keyH.interactPressed){
+                    playAnimal("Red Panda");
+                    keyH.interactPressed = false;
+                }
+            }else{
+                playerOnPosition = false;
+            }
+
+                //Shoebill UI & Sound
+            if (player.x >= 406 && player.x <= 418 && player.y >= 280 && player.y <= 376){
+                ui.displayUI(4);
+                playerOnPosition = true;
+                if (keyH.interactPressed){
+                    playAnimal("Shoebill");
+                    keyH.interactPressed = false;
+                }
+            }else{
+                playerOnPosition = false;
+            }
+
+                //Okapi Johnstoni UI & Sound
+            if (player.x >= 406 && player.x <= 418 && player.y >= 424 && player.y <= 520){
+                ui.displayUI(5);
+                playerOnPosition = true;
+                if (keyH.interactPressed){
+                    playAnimal("Okapi Johnstoni");
+                    keyH.interactPressed = false;
+                }
+            }else{
+                playerOnPosition = false;
+            }
+
+            //exit rule
+            if (player.x >= 640 && player.x <= 718 && player.y >= 484 && player.y <= 526){
                 if (keyH.interactPressed){
                     System.exit(0);
                 }
             }
 
+            //Game fps rule
             try {
                 Thread.sleep(drawTiming);
             } catch (InterruptedException e) {
@@ -138,6 +196,8 @@ public class GamePanel extends JPanel implements Runnable{
         }
         g2.dispose();
     }
+
+    //Sound method
     public void playMusic(int i){
         sound.setFile(String.valueOf(i));
         sound.play();

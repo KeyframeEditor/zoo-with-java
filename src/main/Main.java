@@ -26,11 +26,5 @@ public class Main {
 
         gamePanel.startGameThread();
         gamePanel.setupGame();
-
-//        File asset_up1 = new File("src/res/player/down1.png");
-//        System.out.println(asset_up1.exists());
-
-//        File asset_up1 = new File("C://poop_java_assets/up1.png");
-//        System.out.println("There is a file: "+asset_up1.exists());
     }
 }

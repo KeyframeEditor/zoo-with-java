@@ -25,7 +25,7 @@ public class TileManager {
             tile[0] = new Tile();
 
             bgArray[0] = new Tile();
-            bgArray[0].image = ImageIO.read(getClass().getResourceAsStream(Map.grassTest));
+            bgArray[0].image = ImageIO.read(getClass().getResourceAsStream(Map.background));
 
             bgArray[1] = new Tile();
             bgArray[1].image = ImageIO.read(getClass().getResourceAsStream(Map.beast));
