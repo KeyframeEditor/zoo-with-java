@@ -53,9 +53,9 @@ dijumpai di kebun binatang pada umumnya.
 - Moved in-game exit location to the bottom right corner of the screen
 
 ### 15/06/22 - Bug fix v1.1
-- Squashed a bug where the player can enter a wombat cage
+- Squashed a bug where the player can enter the wombat cage
 - Updated game soundtrack
-- Adjusted player collision on some cages
+- Adjusted collision on some cages
 
 ### 16/06/22 - Changes v1.1.1
 - Player now exit the game immediately after entering the exit location
