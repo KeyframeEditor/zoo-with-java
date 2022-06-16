@@ -15,10 +15,10 @@ dijumpai di kebun binatang pada umumnya.
 
 
 ## Credits
-- Lead Programmer: nope.
-- Lead Concept & Designer: sekiper
-- Soundtrack: C418, Minecraft
-- Sound Effects: Minecraft
+- Lead Programmer: Andhika
+- Lead Concept & Designer: Rangga
+- Soundtrack: AOT S2 OST, Hiroyuki Sawano
+- Sound Effects: Mojang Studios, Minecraft
 
 
 
@@ -50,12 +50,17 @@ dijumpai di kebun binatang pada umumnya.
 - Fix stretched player character
 - Added player collision on animal cage and street fences
 - All animal interaction UI & sounds are enabled
-- Fix in-game exit program location to the bottom right corner of the screen
+- Moved in-game exit location to the bottom right corner of the screen
 
 ### 15/06/22 - Bug fix v1.1
 - Squashed a bug where the player can enter a wombat cage
 - Updated game soundtrack
 - Adjusted player collision on some cages
+
+### 16/06/22 - Changes v1.1.1
+- Player now exit the game immediately after entering the exit location
+- Changed credits for video report purposes
+- Adjusted volume and length of the soundtrack
 
 ## Screenshot(s)
 ![Img 2](screenshots/img2.png)

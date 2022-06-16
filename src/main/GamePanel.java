@@ -3,7 +3,6 @@ package main;
 import entity.Player;
 import tile.TileManager;
 
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -78,6 +77,7 @@ public class GamePanel extends JPanel implements Runnable{
             // set of game rules
             displayUI = false;
             tileM.bgIndex = 0;
+
             if (player.x >= 700 && player.x <= 718 && player.y >= 4 && player.y <= 16){
                 while(true){
                     tileM.bgIndex = 1;
@@ -167,9 +167,7 @@ public class GamePanel extends JPanel implements Runnable{
 
             //exit rule
             if (player.x >= 640 && player.x <= 718 && player.y >= 484 && player.y <= 526){
-                if (keyH.interactPressed){
-                    System.exit(0);
-                }
+                System.exit(0);
             }
 
             //Game fps rule
