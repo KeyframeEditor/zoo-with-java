@@ -21,11 +21,13 @@ dijumpai di kebun binatang pada umumnya.
 - Sound Effects: Mojang Studios, Minecraft
 
 
+## Change Logs
+All the changes we made throughout the game development
 
-### Change Log 06/06/22 - Intial Commit
+### 06/06/22 - Intial Commit
 - Basic game functions (Graphics, Player movement, Sound trigger, Soundtrack).
 
-### Change Log 09/06/22 - UI Update
+#### 9/06/22 - UI Update
 - Added information UI with animal title and their descprition,
 - Added a new feature: display information UI whenever player is on a certain place
 - Added interact button UI
@@ -33,17 +35,18 @@ dijumpai di kebun binatang pada umumnya.
 - Updated map
 - Updated window title
 
-### Change Log 10/06/22 - More Changes
+#### 10/06/22 - More Changes
 - Added new app icon
 - Added "Beast"
 - Updated map
 
-### Change Log 14/06/22 - Added Animal Sounds
+#### 14/06/22 - Added Animal Sounds
 - Added 6 new animal sounds (okapi, red panda, rhea, saiga, shoebill, wombat)
 - Updated character design
 - Simplification on how sounds are played for code readability
 - Adjusted interact button UI alignment
 - Updated app window icon
+
 
 ### 15/06/22 - FIRST RELEASE!! v1.0
 - Updated map
@@ -52,12 +55,12 @@ dijumpai di kebun binatang pada umumnya.
 - All animal interaction UI & sounds are enabled
 - Moved in-game exit location to the bottom right corner of the screen
 
-### 15/06/22 - Bug fix v1.1
+#### 15/06/22 - Changes and Bug fix v1.1
 - Squashed a bug where the player can enter the wombat cage
 - Updated game soundtrack
 - Adjusted collision on some cages
 
-### 16/06/22 - Changes v1.1.1
+#### 16/06/22 - Changes v1.1.1
 - Player now exit the game immediately after entering the exit location
 - Changed credits for video report purposes
 - Adjusted volume and length of the soundtrack
